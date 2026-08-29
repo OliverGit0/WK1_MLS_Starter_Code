@@ -2,6 +2,12 @@
 let x = 5;
 
 // Exercise 1: Comment-Driven Development
+// Exercise 1: inline
+function processUserData(users) {
+  return users
+    .filter(user => user.age >= 18)
+    .map(({ name, email }) => ({ name, email }));
+}
 // Function to calculate the factorial of a number 
 function factorial(n) {
   if (n <= 1) {
